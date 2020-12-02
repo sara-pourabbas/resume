@@ -77,21 +77,21 @@ hr {
   filter: alpha(opacity=20);
 }
 
-.project-referal {
+.skills__project-referal {
   margin-top: 40px;
 }
 
-.project-referal p {
+.skills-project-referal__title {
   font-style: italic;
   color: #999999;
 }
 
-.btn-primary {
+.skills-project-referal__btn {
   background-color: #22a39f;
   border-color: #1c8784;
 }
 
-.btn-primary:hover {
+.skills-project-referal__btn:hover {
   background-color: #1c8784;
   border-color: #1c8784;
 }
@@ -275,21 +275,18 @@ hr {
 .navbar__collapse--collapse{
   display: none
 }
-.navbar .navbar-nav {
+.navbar__nav {
   float: none;
-}
-
-.navbar-nav {
   margin: 0px;
 }
 
-.navbar .nav > li {
+.navbar .nav > .nav__item {
   display: block;
   float: none;
   height: 80px;
 }
 
-.navbar .nav > li a {
+.navbar .nav > .nav__item .nav__link {
   display: block;
   height: 80px;
   text-align: center;
@@ -298,14 +295,17 @@ hr {
   color: #ffffff;
 }
 
-.navbar .nav > li a:hover,
-.navbar .nav > li a:focus {
+.navbar .nav > .nav__item .nav__link:hover,
+.navbar .nav > .nav__item .nav__link:focus {
   color: #999999;
 }
 
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
+
+
+
+.navbar-default .navbar__nav > .active > .nav__link,
+.navbar-default .navbar__nav > .active > .nav__link:hover,
+.navbar-default .navbar__nav > .active > .nav__link:focus {
   background: #22a39f;
   color: #ffffff;
 }
@@ -333,58 +333,54 @@ hr {
   padding: 40px 180px;
 }
 
-#profile .row > div {
+  .profile-section__column {
   margin-bottom: 20px;
 }
 
-#profile .row > div img {
+ .profile-section__img {
   width: 100%;
   max-width: 246px;
   height: auto;
 }
 
-#experiences .experience {
+.experiences-section__item {
   margin-bottom: 20px;
 }
 
-#experiences .experience p > strong {
+.experiences-section__degree {
   display: block;
   padding-top: 8px;
   margin-bottom: 10px;
 }
 
-#experiences .experience .experience-details {
+.experiences-section__details {
   display: block;
   margin-top: 6px;
 }
 
-#experiences .experience .experience-details * {
+.experiences-section__details * {
   color: #22a39f;
 }
 
-#experiences .experience .experience-details .seperator {
+.experiences-details__seperator {
   color: #bcbcbc;
 }
 
-#abilities ul > li {
+ .abilities-section__list-item {
   min-height: 30px;
   padding: 3px 0px;
 }
-
-#abilities ul > li:hover {
+.abilities-section__list-item:hover {
   background: #f2f2f2;
 }
-
-#abilities ul > li .ability-title {
+ .abilities-list-item__title {
   display: inline-block;
   width: 60%;
 }
-
-#abilities ul > li .ability-score {
+.abilities-list-item__score {
   float: right;
 }
-
-#abilities ul > li .ability-score .glyphicon {
+ .abilities-list-item__score .glyphicon {
   color: #dfe0e0;
   font-size: 14px;
 
@@ -394,11 +390,11 @@ hr {
   transition: all 0.3s;
 }
 
-#abilities ul > li .ability-score .glyphicon.filled {
+ .abilities-list-item__score .glyphicon.filled {
   color: #22a39f;
 }
 
-#abilities ul > li:hover .ability-score .glyphicon {
+ .abilities-section__list-item:hover .abilities-list-item__score .glyphicon {
   margin-left: 2px;
 }
 
@@ -437,33 +433,20 @@ hr {
   -o-transform: rotate(12deg);
 }
 
-/* #projects .row { margin: 0px; } // bootstrap 3.1- hack */
-#projects .row > div {
+/* .projects-section .row { margin: 0px; } // bootstrap 3.1- hack */
+.projects-section__column {
   margin-bottom: 30px;
 }
 
-#projects figure {
+.projects-section__figure {
   position: relative;
   overflow: hidden;
 }
 
-#projects figure h3 {
-  color: #fff;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-
-#projects figure p > strong {
-  width: 60px;
-  display: inline-block;
-  margin: 0px;
-}
-
-#projects figure img {
+.projects-section__img {
   width: 110%;
 }
-
-#projects figure figcaption {
+.projects-section__figcaption {
   padding: 20px 30px;
   position: absolute;
   top: 0px;
@@ -471,8 +454,21 @@ hr {
   height: 100%;
   width: 100%;
 }
+.projects-section__name {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
 
-#projects figure a {
+.projects-section__tags {
+  width: 60px;
+  display: inline-block;
+  margin: 0px;
+}
+
+
+
+.projects-section__view-more{
   z-index: 1000;
   text-indent: 200%;
   white-space: nowrap;
@@ -485,7 +481,7 @@ hr {
   width: 100%;
 }
 
-#projects figure .icon {
+.projects-section__icon {
   background: #22a39f;
   position: absolute;
   top: 0px;
@@ -494,7 +490,7 @@ hr {
   height: 48px;
 }
 
-#projects figure .icon span {
+.projects-section__glyphicon {
   font-size: 18px;
   line-height: 18px;
   padding: 15px;
@@ -571,11 +567,11 @@ hr {
     width: 100%;
   }
 
-  .navbar .nav > li {
+  .navbar .nav > .nav__item {
     height: 60px;
   }
 
-  .navbar .nav > li a {
+  .navbar .nav > .nav__item .nav__link {
     height: 60px;
     text-align: center;
     padding-top: 20px;
@@ -595,17 +591,19 @@ hr {
   .hidden-phone {
     display: none;
   }
-
-  #profile .row * {
+  .profile-section,.abilities-section{
+    background-color: white;
+  }
+  .profile-section__content * {
     text-align: center;
   }
 
-  #experiences .experience .experience-details > span {
+  .experiences-section__location {
     display: block;
     margin-bottom: 6px;
   }
 
-  #experiences .experience .experience-details .seperator {
+  .experiences-section__item .experience-details .seperator {
     display: none;
   }
 
@@ -677,12 +675,12 @@ hr {
 /***** EFFECT *****/
 /*---------------*/
 
-figure.effect {
+.projects-section__figure {
   background: #22a39f;
   color: #fff;
 }
 
-figure.effect img {
+.projects-section__img {
   width: -webkit-calc(100% + 20px);
   width: calc(100% + 20px);
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -692,18 +690,17 @@ figure.effect img {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-
-figure.effect:hover img {
+.projects-section__figure:hover .projects-section__img {
   opacity: 0.2;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
-figure.effect figcaption {
+.projects-section__figcaption {
   text-align: left;
 }
 
-figure.effect h3 {
+.projects-section__name {
   position: relative;
   overflow: hidden;
   padding-bottom: 20px;
@@ -712,11 +709,11 @@ figure.effect h3 {
   transition: opacity 0.35s, transform 0.35s;
 }
 
-figure.effect:hover h3 {
+.projects-section__figure:hover .projects-section__name {
   opacity: 1;
 }
 
-figure.effect h3::after {
+.projects-section__name::after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -730,12 +727,12 @@ figure.effect h3::after {
   transform: translate3d(-100%, 0, 0);
 }
 
-figure.effect:hover h3::after {
+.projects-section__figure:hover .projects-section__name::after {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
-figure.effect p {
+.projects-section__description{
   padding-top: 10px;
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -744,7 +741,7 @@ figure.effect p {
   transform: translate3d(100%, 0, 0);
 }
 
-figure.effect:hover p {
+.projects-section__figure:hover .projects-section__description {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);

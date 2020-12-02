@@ -62,7 +62,7 @@ function applyClickEvent()
 
 function applyNavigationFixForPhone()
 {
-	$('.navbar li a').click(function(event) 
+	$('.js-nav-link').click(function(event) 
 	{
 		$('.js-navbar-collapse').removeClass('in').addClass('navbar__collapse--collapse');
 	});
@@ -72,7 +72,7 @@ function applyScrollSpy()
 {
 	$('#navbar-example').on('activate.bs.scrollspy', function() 
 	{
-		window.location.hash = $('.nav .active a').attr('href').replace('#', '#/');
+		window.location.hash = $('.js-nav-link').attr('href').replace('#', '#/');
 	});
 }
 
