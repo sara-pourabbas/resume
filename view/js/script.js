@@ -72,7 +72,7 @@ function applyScrollSpy()
 {
 	$('#navbar-example').on('activate.bs.scrollspy', function() 
 	{
-		window.location.hash = $('.js-nav-link').attr('href').replace('#', '#/');
+		window.location.hash = $('.active  .js-nav-link').attr('href').replace('#', '#/');
 	});
 }
 

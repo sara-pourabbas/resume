@@ -117,14 +117,6 @@ hr {
   margin-bottom: 0px;
   padding: 0px;
 
-
-
-
-   /* boo */
-    padding: 30px;
-    margin-bottom: 30px;
-    color: inherit;
-    background-color: #eee
 }
 
 .header__content {
@@ -133,9 +125,6 @@ hr {
   z-index: 4;
   text-align: center;
   color: #ffffff;
-
-/* boo */
-  max-width: 100%
 }
 
 .header__content__name {
@@ -143,19 +132,9 @@ hr {
   border-bottom: 1px solid #ffffff;
   border-bottom-color: rgba(255, 255, 255, 0.35);
   display: inline-block;
-
-
-/* boo */
-  color: inherit
 }
 .header__content .header__content__description {
   font-size: 28px;
-
-
-/* boo */
-  margin-bottom: 15px;
-    font-size: 21px;
-    font-weight: 200
 }
 .header__overaly {
   background-color: #22a39f;
@@ -253,21 +232,10 @@ hr {
 }
 
 
-/* boo */
-.navbar__icon-bar{
-  display: block;
-  width: 22px;
-  height: 2px;
-  border-radius: 1px;
-  background-color: #888
-}
 
-.navbar__icon-bar+.navbar__icon-bar {
-  margin-top: 4px
-}
 
-.navbar__toggle:hover .navbar__icon-bar,
-.navbar__toggle:focus .navbar__icon-bar {
+.navbar-toggle:hover .icon-bar,
+.navbar-toggle:focus .icon-bar {
   background: #222222;
 }
 
