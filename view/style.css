@@ -245,9 +245,9 @@ hr {
 
 
 
- .navbar__nav > .active > .nav__link,
- .navbar__nav > .active > .nav__link:hover,
- .navbar__nav > .active > .nav__link:focus {
+ .navbar-default .navbar__nav > .active > .nav__link,
+ .navbar-default .navbar__nav > .active > .nav__link:hover,
+ .navbar-default .navbar__nav > .active > .nav__link:focus {
   background: #22a39f;
   color: #ffffff;
 }
