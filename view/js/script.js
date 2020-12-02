@@ -70,7 +70,7 @@ function applyNavigationFixForPhone()
 
 function applyScrollSpy()
 {
-	$('#navbar-example').on('activate.bs.scrollspy', function() 
+	$('.js-navbar').on('activate.bs.scrollspy', function() 
 	{
 		window.location.hash = $('.js-nav-link').attr('href').replace('#', '#/');
 	});

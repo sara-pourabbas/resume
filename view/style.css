@@ -96,28 +96,7 @@ hr {
   border-color: #1c8784;
 }
 
-.icon {
-  display: inline-block;
-  background: url(images/sm_icon_sprite.png) no-repeat;
-  height: 32px;
-  width: 32px;
-}
 
-.icon.icon-twitter {
-  background-position: 0px 0px;
-}
-
-.icon.icon-linkedin {
-  background-position: 0px -32px;
-}
-
-.icon.icon-skype {
-  background-position: 0px -64px;
-}
-
-.icon.icon-email {
-  background-position: 0px -96px;
-}
 
 .header {
   background: no-repeat center right fixed url(images/background.jpg);
@@ -139,24 +118,24 @@ hr {
   padding: 0px;
 
 
-  
+
+
+   /* boo */
+    padding: 30px;
+    margin-bottom: 30px;
+    color: inherit;
+    background-color: #eee
 }
 
-/*.jumbotron:before { 
-	border: 1px solid #FFFFFF;
-	bottom: 30px;
-	content: "";
-	left: 30px;
-	position: absolute;
-	right: 30px;
-	top: 30px;
-}*/
 .header__content {
   position: relative;
   top: 28%;
   z-index: 4;
   text-align: center;
   color: #ffffff;
+
+/* boo */
+  max-width: 100%
 }
 
 .header__content__name {
@@ -164,9 +143,19 @@ hr {
   border-bottom: 1px solid #ffffff;
   border-bottom-color: rgba(255, 255, 255, 0.35);
   display: inline-block;
+
+
+/* boo */
+  color: inherit
 }
 .header__content .header__content__description {
   font-size: 28px;
+
+
+/* boo */
+  margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 200
 }
 .header__overaly {
   background-color: #22a39f;
@@ -180,24 +169,6 @@ hr {
   z-index: 2;
 }
 .header .container > * { text-align: center; color: #FFFFFF; }
-/* .header .container {
-  position: relative;
-  top: 28%;
-  z-index: 4;
-  text-align: center;
-  color: #ffffff;
-} */
-
-/* .header .container h1 {
-  padding-bottom: 20px;
-  border-bottom: 1px solid #ffffff;
-  border-bottom-color: rgba(255, 255, 255, 0.35);
-  display: inline-block;
-}
-
-.header .container .lead {
-  font-size: 28px;
-} */
 
 .header__scroll{
   height: 80px;
@@ -210,18 +181,6 @@ hr {
   text-align: center;
   z-index: 6;
 }
-
-/* .header .scroll-down {
-  height: 80px;
-  width: 110px;
-  display: block;
-  position: absolute;
-  bottom: 0px;
-  right: 5%;
-  background-color: #222222;
-  text-align: center;
-  z-index: 6;
-} */
 
 .header__scroll__glyphicon{
   color: #ffffff;
@@ -236,27 +195,10 @@ hr {
   animation-direction: normal;
 }
 
-/* .header .scroll-down .glyphicon {
-  color: #ffffff;
-  font-size: 30px;
-  padding-right: 2px;
-  padding-top: 20px;
-
-  animation-name: wiggle;
-  animation-duration: 1.2s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-} */
-
 .header__scroll:hover .header__scroll__glyphicon{
   padding-top: 25px;
 
 }
-/* 
-.header .scroll-down:hover .glyphicon {
-  padding-top: 25px;
-} */
 
 .navbar {
   border: 0px;
@@ -303,15 +245,29 @@ hr {
 
 
 
-.navbar-default .navbar__nav > .active > .nav__link,
-.navbar-default .navbar__nav > .active > .nav__link:hover,
-.navbar-default .navbar__nav > .active > .nav__link:focus {
+ .navbar__nav > .active > .nav__link,
+ .navbar__nav > .active > .nav__link:hover,
+ .navbar__nav > .active > .nav__link:focus {
   background: #22a39f;
   color: #ffffff;
 }
 
-.navbar-default .navbar-toggle:hover .icon-bar,
-.navbar-default .navbar-toggle:focus .icon-bar {
+
+/* boo */
+.navbar__icon-bar{
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #888
+}
+
+.navbar__icon-bar+.navbar__icon-bar {
+  margin-top: 4px
+}
+
+.navbar__toggle:hover .navbar__icon-bar,
+.navbar__toggle:focus .navbar__icon-bar {
   background: #222222;
 }
 
@@ -332,7 +288,9 @@ hr {
   max-width: 1280px;
   padding: 40px 180px;
 }
-
+.profile-section,.abilities-section{
+  background-color: white;
+}
   .profile-section__column {
   margin-bottom: 20px;
 }
@@ -495,17 +453,19 @@ hr {
   line-height: 18px;
   padding: 15px;
 }
-
-#contact {
-  padding-bottom: 200px;
+.contact-section{
+  background-color: #434242;
+}
+.contact-section__content {
+  padding-bottom: 150px;
 }
 
-#contact h2,
-#contact .row * {
+.contact-section__title,
+.contact-section__social * {
   color: #ffffff;
 }
 
-#contact a {
+.contact-section__link {
   display: block;
   line-height: 32px;
   margin-bottom: 20px;
@@ -513,16 +473,49 @@ hr {
   filter: alpha(opacity=60);
 }
 
-#contact a .icon {
+.contact-section__icon {
   float: left;
   margin-right: 20px;
 }
 
-#contact a:hover {
+.contact-section__link:hover {
   opacity: 1;
   filter: alpha(opacity=100);
   text-decoration: none;
 }
+
+.contact-section__icon {
+  display: inline-block;
+  background: url(images/sm_icon_sprite.png) no-repeat;
+  height: 32px;
+  width: 32px;
+}
+
+.contact-section__icon-twitter {
+  background-position: 0px 0px;
+}
+
+.contact-section__icon-linkedin {
+  background-position: 0px -32px;
+}
+
+.contact-section__icon-skype {
+  background-position: 0px -64px;
+}
+
+.contact-section__icon-email {
+  background-position: 0px -96px;
+}
+
+.contact-section__twitter-btn{
+  position: static;
+  visibility: visible;
+  width: 62px;
+  height: 20px;
+}
+
+
+
 
 .logo__link {
   position: absolute;
@@ -543,6 +536,37 @@ hr {
     padding: 20px 0px;
   }
 }
+
+
+/* boo */
+@media screen and (min-width:768px) {
+  .header {
+      padding-top: 48px;
+      padding-bottom: 48px
+  }
+
+  .container .header {
+      padding-right: 60px;
+      padding-left: 60px
+  }
+
+  .header__content__name {
+      font-size: 63px
+  }
+}
+/* boo */
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 767px) {
   .header:before {
@@ -591,9 +615,7 @@ hr {
   .hidden-phone {
     display: none;
   }
-  .profile-section,.abilities-section{
-    background-color: white;
-  }
+ 
   .profile-section__content * {
     text-align: center;
   }
@@ -629,11 +651,11 @@ hr {
     padding: 20px 0px;
   }
 
-  #contact {
+.contact-section__content {
     padding-bottom: 60px;
   }
 
-  #contact a .icon {
+  .contact-section__icon {
     float: left;
     margin-right: 10px;
   }
