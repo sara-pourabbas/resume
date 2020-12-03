@@ -360,6 +360,7 @@ hr {
 }
 
 .projects-section__img {
+  height: 245px;
   width: 110%;
 }
 .projects-section__figcaption {
