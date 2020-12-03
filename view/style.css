@@ -50,20 +50,6 @@ h3 {
   font-size: 28px;
 }
 
-p.lead {
-  text-align: center;
-  color: #727878;
-}
-
-p.lead a {
-  color: #ffffff;
-  text-decoration: underline;
-}
-
-p.lead a:hover {
-  text-decoration: none;
-}
-
 ul.no-bullets {
   list-style-type: none;
   margin: 0px;
@@ -133,8 +119,10 @@ hr {
   border-bottom-color: rgba(255, 255, 255, 0.35);
   display: inline-block;
 }
-.header__content .header__content__description {
+ .header .header__content__description {
   font-size: 28px;
+  text-align: center;
+  color: #727878;
 }
 .header__overaly {
   background-color: #22a39f;
@@ -263,10 +251,12 @@ hr {
   margin-bottom: 20px;
 }
 
- .profile-section__img {
+.profile-section__img {
   width: 100%;
-  max-width: 246px;
+  /* max-width: 246px; */
   height: auto;
+  border:12px solid #f3efe0;
+  border-radius: 50%;
 }
 
 .experiences-section__item {
@@ -642,7 +632,7 @@ hr {
     background-attachment: scroll;
   }
 
-  .header .lead {
+   .header__content__description {
     display: none;
   }
 }
