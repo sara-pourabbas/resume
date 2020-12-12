@@ -360,7 +360,6 @@ hr {
 }
 
 .projects-section__img {
-  height: 245px;
   width: 110%;
 }
 .projects-section__figcaption {
@@ -659,6 +658,7 @@ hr {
 .projects-section__figure {
   background: #22a39f;
   color: #fff;
+  height: 245px;
 }
 
 .projects-section__img {
