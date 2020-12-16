@@ -38,7 +38,7 @@ h4 {
 h2,
 h3 {
   font-weight: 300;
-  color: #22a39f;
+  color: #ef5422;
 }
 
 h2 {
@@ -73,13 +73,13 @@ hr {
 }
 
 .skills-project-referal__btn {
-  background-color: #22a39f;
-  border-color: #1c8784;
+  background-color: #ef5422;
+  border-color: #ef5422;
 }
 
 .skills-project-referal__btn:hover {
-  background-color: #1c8784;
-  border-color: #1c8784;
+  background-color: #ef5422;
+  border-color: #ef5422;
 }
 
 
@@ -125,7 +125,8 @@ hr {
   color: #727878;
 }
 .header__overaly {
-  background-color: #22a39f;
+  /* background-color: #22a39f; */
+  background-color: #ef5422;
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -215,7 +216,7 @@ hr {
  .navbar-default .navbar__nav > .active > .nav__link,
  .navbar-default .navbar__nav > .active > .nav__link:hover,
  .navbar-default .navbar__nav > .active > .nav__link:focus {
-  background: #22a39f;
+  background: #ef5422;
   color: #ffffff;
 }
 
@@ -275,7 +276,7 @@ hr {
 }
 
 .experiences-section__details * {
-  color: #22a39f;
+  color:#ef5422;
 }
 
 .experiences-details__seperator {
@@ -307,7 +308,7 @@ hr {
 }
 
  .abilities-list-item__score .glyphicon.filled {
-  color: #22a39f;
+  color: #ef5422;
 }
 
  .abilities-section__list-item:hover .abilities-list-item__score .glyphicon {
@@ -398,7 +399,7 @@ hr {
 }
 
 .projects-section__icon {
-  background: #22a39f;
+  background: #ef5422;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -656,7 +657,7 @@ hr {
 /*---------------*/
 
 .projects-section__figure {
-  background: #22a39f;
+  background:#ef5422;
   color: #fff;
   height: 245px;
 }
