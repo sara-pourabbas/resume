@@ -1,6 +1,7 @@
 var data =require ('./data/data.json');
 // load the things we need
 var express = require('express');
+const http = require('http');
 var app = express();
 
 // set the view engine to ejs
@@ -22,5 +23,8 @@ app.get('/', function(req, res) {
 });
 
 
-app.listen(8880);
-console.log('8080 is the magic port');
+// app.listen(8880);
+
+
+http.createServer(app).listen(process.env.PORT);
+console.log('8880 is the magic port');
