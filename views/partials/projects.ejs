@@ -1,0 +1,29 @@
+<h2><%= projects.headTitle %></h2><!-- atom --> 
+<p class="lead"><!-- atom --> 
+  <%- projects.proverb %>
+</p>
+
+<hr /><!-- atom --> 
+
+<div class="row">
+    <% projects.figures.forEach(function(figure) { %>
+  <div class="projects-section__column col-md-6 col-sm-12 col-xs-12"><!-- molecule --> 
+    <figure class="projects-section__figure ">
+      <img src="<%- figure.src %>" alt="<%= figure.alt %>" class="projects-section__img" /><!-- atom --> 
+
+      <figcaption class="projects-section__figcaption">
+        <h3 class="projects-section__name"><%= figure.projectName %></h3><!-- atom --> 
+        <p class="projects-section__description"><%= figure.projectDesc %> </p><!-- atom --> 
+        <p class="projects-section__description"><!-- atom --> 
+          <strong class="projects-section__tags">Tags:</strong> <br /><%= figure.projectTag %>
+        </p>
+        <a href="h<%- figure.projectLink %>" target="_blank" class="projects-section__view-more"><%= figure.more %></a><!-- atom --> 
+        <span class="projects-section__icon "><!-- atom --> 
+          <span class="projects-section__glyphicon glyphicon glyphicon-new-window"></span>
+        </span>
+      </figcaption>
+    </figure>
+  </div>
+  <% }); %>  
+
+  </div>

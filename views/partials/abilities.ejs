@@ -1,0 +1,116 @@
+<div id="abilities" class="abilities-section__content container">
+  <h2><%= abilities.headTitle %></h2><!-- atom --> 
+  <p class="lead"><!-- atom --> 
+    <%- abilities.proverb %>
+  </p>
+  <hr /><!-- atom --> 
+  <h3><%= abilities.innerTitleOne %></h3><!-- atom --> 
+
+  <div class="skills row">
+    <div class="col-md-6">
+      <ul class="abilities-section__list no-bullets"><!-- molecule --> 
+        <% abilities.skills.forEach(function(skill,index) { %>         
+          <% if(index<=6) {%>
+        <li class="abilities-section__list-item">
+          <span class="abilities-list-item__title "><%= skill.title %></span><!-- atom --> 
+          <span class="abilities-list-item__score ">
+            <% for (var i = 1; i <=5; i++) { %>
+            <span class="glyphicon glyphicon-star  <%= i<= skill.star ? 'filled' : '' %>  "></span><!-- atom -->             
+            <% } %> 
+          </span>
+        </li>
+        <%}%>
+        <% }); %> 
+
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <ul class="abilities-section__list no-bullets"><!-- molecule --> 
+        <% abilities.skills.forEach(function(skill,index) { %>          
+          <% if(index >= 7) {%>
+        <li class="abilities-section__list-item">
+          <span class="abilities-list-item__title "><%= skill.title %></span><!-- atom --> 
+          <span class="abilities-list-item__score ">
+            <% for (var i = 1; i <=5; i++) { %>
+            <span class="glyphicon glyphicon-star  <%= i<= skill.star ? 'filled' : '' %>  "></span><!-- atom -->             
+            <% } %> 
+          </span>
+        </li>
+        <%}%>
+        <% }); %> 
+
+      </ul>
+    </div>
+  </div>
+
+  <div class="text-center skills__project-referal ">
+    <p class="skills-project-referal__title"><%= abilities.referalText %></p>
+    <a
+      href="https://github.com/sarapourabbas208"
+      class="btn btn-primary skills-project-referal__btn"
+      target="_blank"
+      ><!-- atom --> 
+     <%= abilities.titleLink %>
+      </a>
+  </div>
+
+  <hr /><!-- atom --> 
+
+  <h3><%= abilities.innerTitleTwo %></h3><!-- atom --> 
+
+  <div class="row">
+    <div class="col-md-6">
+      <ul class="abilities-section__list no-bullets"><!-- molecule -->         
+        <% abilities.languages.forEach(function(item) { %>                   
+        <li class="abilities-section__list-item">
+          <span class="abilities-list-item__title "><%= item.title %></span><!-- atom --> 
+          <span class="abilities-list-item__score ">
+            <% for (var i = 1; i <=5; i++) { %>
+            <span class="glyphicon glyphicon-star  <%= i<= item.star ? 'filled' : '' %>  "></span><!-- atom --> 
+            <% } %>                        
+          </span>
+        </li>     
+        <% }); %> 
+      </ul>
+    </div>
+  </div>
+
+  <hr /><!-- atom --> 
+
+  <h3><%= abilities.innerTitleThree %></h3><!-- atom --> 
+
+  <div class="row">
+    <div class="col-md-6">
+      <ul class="abilities-section__list no-bullets"><!-- mulecule --> 
+        <% abilities.tools.forEach(function(item,index) { %>          
+          <% if(index <= 4) {%>
+        <li class="abilities-section__list-item">
+          <span class="abilities-list-item__title "><%= item.title %></span><!-- atom --> 
+          <span class="abilities-list-item__score ">
+            <% for (var i = 1; i <=5; i++) { %>
+            <span class="glyphicon glyphicon-star  <%= i<= item.star ? 'filled' : '' %>  "></span><!-- atom -->             
+            <% } %> 
+          </span>
+        </li>
+        <%}%>
+        <% }); %> 
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <ul class="abilities-section__list no-bullets">
+        <% abilities.tools.forEach(function(item,index) { %>          
+          <% if(index >= 5) {%>
+        <li class="abilities-section__list-item">
+          <span class="abilities-list-item__title "><%= item.title %></span><!-- atom --> 
+          <span class="abilities-list-item__score ">
+            <% for (var i = 1; i <=5; i++) { %>
+            <span class="glyphicon glyphicon-star  <%= i<= item.star ? 'filled' : '' %>  "></span><!-- atom -->             
+            <% } %> 
+          </span>
+        </li>
+        <%}%>
+        <% }); %>
+      </ul>
+    </div>
+  </div>
+</div>

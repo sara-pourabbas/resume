@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="content-script-type" content="text/javascript" />
+    <meta http-equiv="content-style-type" content="text/css" />
+    <meta http-equiv="content-language" content="nl" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="author" content="Sara Pourabbas" />
+    <meta
+      name="description"
+      content="I'm Sara Pourabbas, a front-end webdeveloper "
+    />
+    <meta
+      name="keywords"
+      content="Sara Pourabbas, Interactive Resume, Web developer, Startup, Interactive CV, Resume, CV, Whoopaa, HRMatches, Sanitairwinkel, REACT, JS, CSS"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="14 days" />
+
+    <title>Sara Pourabbas - Front End Web Developer - Interactive Resume</title>
+
+    <!-- Bootstrap core CSS -->
+    <link
+      href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+    <!--[if lt IE 9]>
+      <script src="/view/js/html5shiv.js"></script>
+      <script src="/view/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Begin Inspectlet Embed Code -->
+    <script type="text/javascript" id="inspectletjs">
+      window.__insp = window.__insp || [];
+      __insp.push(["wid", 92785244]);
+      (function () {
+        function __ldinsp() {
+          var insp = document.createElement("script");
+          insp.type = "text/javascript";
+          insp.async = true;
+          insp.id = "inspsync";
+          insp.src =
+            ("https:" == document.location.protocol ? "https" : "http") +
+            "://www.inspectlet.com/inspectlet.js";
+          var x = document.getElementsByTagName("script")[0];
+          x.parentNode.insertBefore(insp, x);
+        }
+        if (window.attachEvent) {
+          window.attachEvent("onload", __ldinsp);
+        } else {
+          window.addEventListener("load", __ldinsp, false);
+        }
+      })();
+    </script>
+    <!-- End Inspectlet Embed Code -->
+  </head>
+
+  <body data-spy="scroll" data-target="#navbar-example">
+
+<!-- start header organism -->
+    <div
+      id="top"
+      class="header js-header jumbotron"
+      data-src="images/metro_animation.gif"
+      data-position="center right"
+    >
+    
+      <div class="header__content  container">
+        <h1 class="header__content__name"><%= name %></h1>
+        <p class="header__content__description lead"><%= headTitle %></p>
+      </div>
+      
+      <div class="header__overaly"></div><!-- atom -->
+      <!-- atom -->
+      <a href="#profile" class="header__scroll header__scroll--down js-scroll-down">
+        <span class="header__scroll__glyphicon glyphicon glyphicon-chevron-down"></span>
+      </a>
+    </div>
+<!-- end header organism -->
+<!-- start nav molcule -->
+    <nav class=" navbar navbar-default js-navbar" id="navbar-example" role="navigation">
+      <div class=" navbar-header"><!-- atom -->
+        <button
+          type="button"
+          class=" navbar-toggle"
+          data-toggle="collapse"
+          data-target=".navbar-ex1-collapse"
+        >
+          <span class="navbar__title sr-only">Toggle navigation</span>
+          <span class="icon-bar "></span>
+          <span class="icon-bar "></span>
+          <span class="icon-bar "></span>
+        </button>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="navbar__collapse js-navbar-collapse  collapse navbar-collapse navbar-ex1-collapse"><!-- molecule -->
+        <ul class="nav navbar-nav navbar__nav">
+          <% navbar.forEach(function(nav) { %>
+            <li class="nav__item "><a class="nav__link js-nav-link" href="#<%= nav.href %>"> <%= nav.title %></a></li>      
+        <% }); %>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </nav>
+<!-- end nav organism -->
+
+<!-- strat profile organism -->
+<div class="profile-section">
+  <%- include('../partials/profile.ejs'); %>    
+</div>
+<!-- end profile organism -->
+
+
+<!-- strat experiences organism -->
+    <div id="experiences" class="experiences-section container">
+      <%- include('../partials/experiences.ejs'); %> 
+    </div>
+<!-- start abilities organism -->
+    <div class="abilities-section">
+      <%- include('../partials/abilities.ejs'); %> 
+    </div>
+<!-- end abilities organism -->
+<!-- start projects organism -->
+    <div id="projects" class="projects-section container">
+      <%- include('../partials/projects.ejs'); %> 
+      </div>
+    </div>
+<!-- end projects organism -->
+<!-- start contact organism -->
+    <div class="contact-section">
+      <%- include('../partials/contact.ejs'); %> 
+    </div>
+
+
+     
+    </div>
+    <!-- /.modal -->
+    <!-- Bootstrap core JavaScript -->
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
+    ></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(["_setAccount", "UA-3361587-8"]);
+      _gaq.push(["_trackPageview"]);
+
+      (function () {
+        var ga = document.createElement("script");
+        ga.type = "text/javascript";
+        ga.async = true;
+        ga.src =
+          ("https:" == document.location.protocol
+            ? "https://ssl"
+            : "http://www") + ".google-analytics.com/ga.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

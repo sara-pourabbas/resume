@@ -1,0 +1,41 @@
+<div id="contact" class="contact-section__content container">
+    <h2 class="contact-section__title"><%= contact.headTitle %></h2><!-- atom --> 
+    <p class="lead"><!-- atom --> 
+      <%- contact.proverb %>
+    </p>
+
+    <hr /><!-- atom --> 
+
+    <div class="contact-section__social row">
+      <div class="col-md-6">
+        <ul class="no-bullets"><!-- molecule --> 
+            <% contact.socials.forEach(function(social,index) { %> 
+              <% if(index < 1) { %>       
+          <li>
+            <a class="contact-section__link" 
+            href="<%= social.href %>" target="_blank"><!-- atom --> 
+              <span class="contact-section__icon <%= social.class %>"></span><!-- atom --> 
+              <%= social.title %>
+            </a>
+          </li>
+          <% } %>
+          <% }); %> 
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul class="no-bullets"><!-- molecule -->           
+          <% contact.socials.forEach(function(social,index) { %> 
+            <% if(index > 0) { %>       
+        <li>
+          <a class="contact-section__link" 
+          href="<%= social.href %>" target="_blank"><!-- atom --> 
+            <span class="contact-section__icon <%= social.class %>"></span><!-- atom --> 
+            <%= social.title %>
+          </a>
+        </li>
+        <% } %>
+        <% }); %> 
+        </ul>
+      </div>
+    </div>  
+  </div>

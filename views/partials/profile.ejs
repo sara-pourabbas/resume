@@ -1,0 +1,41 @@
+
+
+<div id="profile" class=" container">
+    <h2 class=""><%= profile.headTitle %></h2><!-- atom -->
+    <p class=" lead"><%- profile.bio %></p><!-- atom -->
+   
+    <hr /><!-- atom -->
+
+    <div class="profile-section__content row">
+      <div class="profile-section__column col-md-4">
+        <h3><%= profile.descriptionTitle %></h3><!-- atom -->
+        <p><!-- atom -->
+          <%= profile.description%>
+        </p>
+      </div>
+      <div class="profile-section__column col-md-4 text-center">          
+          <img
+          class="profile-section__img"
+            src="<%= profile.src%>"
+            alt="Sara Pourabbas"               
+          />           
+       </div>
+      <div class="profile-section__column col-md-4">
+        <h3>Details</h3><!-- atom -->
+        <p><!-- atom -->
+          <strong>Name:</strong><br /><!-- atom -->
+          <%= name %><br />
+          <strong>Location:</strong><br /><!-- atom -->
+          <%= profile.location %>
+        </p>
+        
+      </div>
+    </div>
+
+    <div class="text-center">
+      <p><!-- atom -->
+        <%= profile.cutomText %>
+      </p>
+
+    </div>
+  </div>

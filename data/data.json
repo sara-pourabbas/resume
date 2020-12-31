@@ -1,0 +1,117 @@
+{
+    "name":"Sara Pourabbas",
+    "headTitle":"Interactive resume",
+    "navbar":[
+        
+        {"href":"profile","title":"Profile"},
+        {"href":"experiences","title":"Experiences"},
+        {"href":"abilities","title":"Abilities"},
+        {"href":"projects","title":"Projects"},
+        {"href":"contact","title":"Contact"}
+    ],
+    "profile":{
+        "headTitle":"Profile",
+        "bio":"I'm a front-end webdeveloper",
+        "descriptionTitle":"About Me",
+        "description":"I am an allround front-end web developer. I love structure and order and I also stand for quality. I love spending time on fixing little details and optimizing web apps. Also I like working in a team, you'll learn faster and much more. ",
+        "src":"images/sara-pourabbas.png",
+        "location":"Iran, The Gilan, Earth",
+        "cutomText":"Got inspired? Copied the theme? Or do you just like the website? No problem, just buy me a Ice cream and make me happy!"
+    },
+    "experiences":{  
+        "headTitle" :"Experiences",
+        "title" :"Educations",
+        "proverb":"Anyone can write code that computer can understand. a good programmer writes code that understandable to other colleagues.",
+        "educations":[
+            {
+                "universityName":"Mehrastan University",
+                "date":"September 2010 - September 2012",
+                "degree":"Bachelor - Computer Software",
+                "description":"Passing specialized courses in computer software. Translation of specialized computer articles in advanced programming lessons. I did Network and Web Project and computer basics. Doing a news site project in php as a dissertation.",
+                "location":"Astaneh-ye Ashrafiyeh, Gilan Province, Iran"
+            },
+            {
+                "universityName":"Moein University",
+                "date":"January 2008 - January 2010",
+                "degree":"Associate Degree - Computer Software",
+                "description":"I passed specialized computer units in the field of software, I translated specialized articles and I loved it, Researching the technical issues of my field and presenting it to others was one of the things I did, Working on a Visual Basic multimedia project was was my dissertation",
+                "location":"Gilan Province, Rasht, District 5, Professor Sami'i"
+            }
+        ]
+    },
+    "abilities":{
+        "headTitle":"Abilities",       
+        "innerTitleOne":"Skills",
+        "proverb":"&ldquo;Life without knowledge is death in disguise.&rdquo;&#013;- Talib Kweli",
+        "skills":[
+            {"title":"Bootstrap Framework","star":5},
+            {"title":"Html","star":5},
+            {"title":"CSS(3)","star":5},
+            {"title":"JSX","star":5},
+            {"title":"Javascript","star":4},
+            {"title":"ES6","star":4},
+            {"title":"Debugging","star":4},
+            {"title":"SASS/SCSS","star":5},
+            {"title":"BEM","star":4},
+            {"title":"Reactjs","star":4},
+            {"title":"Redux","star":3},
+            {"title":"Restful","star":3},
+            {"title":"Api","star":3},
+            {"title":"Git","star":3}            
+        ],
+        "referalText":"These projects are based on the React framework.",
+        "titleLink":" See project on Github",
+        "innerTitleTwo":"Languages",
+        "languages":[{"title":"English","star":3}],
+        "innerTitleThree":"Tools",
+        "tools":[
+            {"title":"Visual Studio Code","star":5},
+            {"title":"WebStorm","star":5},
+            {"title":"React Developer Tools","star":4},
+            {"title":"Git / Git Flow","star":3},
+            {"title":"Sublime Text","star":4},
+            {"title":"Adobe XD","star":3},
+            {"title":"Adobe Photoshop","star":3}           
+            ]
+    },
+    "projects":{
+        "headTitle":"Projects",
+        "proverb":"&ldquo;You can do anything you set your mind to.&rdquo;<br />- Benjamin Franklin",
+        "figures":[
+            {
+                "src":"images/project-saraye-danesh.png",
+                "alt":"saraye danesh",
+                "projectName":"Saraye Danesh",
+                "projectDesc":"A site for girls 'and boys' schools",
+                "projectTag":"Html, Jquery,Css3",
+                "projectLink":"http://www.sarayedanesh.sch.ir/",
+                "more":"View more"
+            },
+            {
+                "src":"images/project-derakhshan.png",
+                "alt":"derakhshan",
+                "projectName":"Derakhshan",
+                "projectDesc":"A site for kindergarten",
+                "projectTag":"Html, Jquery,Css3",
+                "projectLink":"http://www.derakhshan.sch.ir/",
+                "more":"View more"
+            }
+        ]
+    },
+    "contact":{
+        "headTitle":"Contact",
+        "proverb":"&ldquo;If I had asked people what they wanted, they would have said faster horses. &rdquo;<br />- Henry Ford",
+        "socials":[
+            {
+                "href":"https://www.linkedin.com/in/sara-pourabbas-6a6a93140",
+                "title":"www.linkedin.com/in/sara-pourabbas",
+                "class":"contact-section__icon-linkedin"
+            },
+            {
+                "href":"mailto:info@sarapourabbas.ir",
+                "title":"info@sarapourabbas.ir",
+                "class":"contact-section__icon-email"
+            }
+        ]
+    }
+}

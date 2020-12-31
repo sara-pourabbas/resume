@@ -1,0 +1,34 @@
+<h2><%= experiences.headTitle %></h2><!-- atom -->
+      <p class="lead"><!-- atom -->
+        &ldquo; <%= experiences.proverb %>َ &rdquo;<br /> 
+      </p>
+
+      <hr /><!-- atom -->
+      <h3><%= experiences.title %></h3><!-- atom -->  
+      <div class="experiences-section__content">
+
+        <% experiences.educations.forEach(function(education) { %>
+          <div class="experiences-section__item row"><!-- molecule --> 
+            <div class="col-md-4"> 
+              <h4><%= education.universityName %></h4><!-- atom -->  
+              <p><%= education.date %></p><!-- atom -->  
+            </div>
+            <div class="col-md-8">
+              <p>
+                <strong class="experiences-section__degree"><%= education.degree %></strong><!-- atom -->  
+                <span class="hidden-phone"><!-- atom -->  
+                  <%= education.description %>
+                </span>
+                <span class="experiences-section__details"><!-- atom -->  
+                  <span class="experiences-section__location" >
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                    <%= education.location %>
+                  </span>
+                </span>
+              </p>
+            </div>
+          </div> 
+          
+      <% }); %>     
+
+      </div>
