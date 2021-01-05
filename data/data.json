@@ -18,7 +18,7 @@
         "bio":"I'm a front-end webdeveloper",
         "descriptionTitle":"About Me",
         "description":"I am an allround front-end web developer. I love structure and order and I also stand for quality. I love spending time on fixing little details and optimizing web apps. Also I like working in a team, you'll learn faster and much more. ",
-        "src":"images/sara-pourabbas.png",
+        "src":"public/images/sara-pourabbas.png",
         "location":"Iran, The Gilan, Earth",
         "cutomText":"Got inspired? Copied the theme? Or do you just like the website? No problem, just buy me a Ice cream and make me happy!"
     },
@@ -83,7 +83,7 @@
         "proverb":"&ldquo;You can do anything you set your mind to.&rdquo;<br />- Benjamin Franklin",
         "figures":[
             {
-                "src":"images/project-saraye-danesh.png",
+                "src":"public/images/project-saraye-danesh.png",
                 "alt":"saraye danesh",
                 "projectName":"Saraye Danesh",
                 "projectDesc":"A site for girls 'and boys' schools",
@@ -92,7 +92,7 @@
                 "more":"View more"
             },
             {
-                "src":"images/project-derakhshan.png",
+                "src":"public/images/project-derakhshan.png",
                 "alt":"derakhshan",
                 "projectName":"Derakhshan",
                 "projectDesc":"A site for kindergarten",
