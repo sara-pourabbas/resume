@@ -59,8 +59,7 @@
             {"title":"BEM","star":4},
             {"title":"Reactjs","star":4},
             {"title":"Redux","star":3},
-            {"title":"Restful","star":3},
-            {"title":"Api","star":3},
+            {"title":"RestfulApi","star":3},            
             {"title":"Git","star":3}            
         ],
         "referalText":"These projects are based on the React framework.",
@@ -108,7 +107,7 @@
         "socials":[
             {
                 "href":"https://www.linkedin.com/in/sara-pourabbas-6a6a93140",
-                "title":"www.linkedin.com/in/sara-pourabbas",
+                "title":"sara-pourabbas",
                 "class":"contact-section__icon-linkedin"
             },
             {
